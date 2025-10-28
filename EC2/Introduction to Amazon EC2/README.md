@@ -1,4 +1,4 @@
-# My Hands-on Lab: Intro to Amazon EC2
+# Intro to Amazon EC2
 ## Overview
 In this lab, I explored the fundamentals of **Amazon Elastic Compute Cloud (Amazon EC2)** by launching, configuring, monitoring, resizing, and terminating an EC2 instance.
 
