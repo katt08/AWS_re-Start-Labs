@@ -41,7 +41,7 @@ Successfully logged into the Amazon Linux terminal as the ec2-user.
 In this task, I explored several commands to gain information about the system and current user session.
 
   User & System Information
-bash
+   ```bash
 Copy code
 whoami
 hostname -s
@@ -53,7 +53,7 @@ uptime -p — showed how long the system had been running
 These commands helped me verify my user identity, instance details, and uptime information.
 
 User Sessions
-bash
+   ```bash
 Copy code
 who -H -a
 Displayed all users logged into the system, along with session details such as:
@@ -63,7 +63,7 @@ Name, Line, Time, Idle, PID, and Exit
 I learned how to view active user sessions and related process information.
 
 Time Zones and Dates
-bash
+   ```bash
 Copy code
 TZ=America/New_York date
 TZ=America/Los_Angeles date
@@ -72,7 +72,7 @@ Helped me understand how Linux handles time zone environments dynamically.
 This was useful for seeing how different systems or regions reflect local times.
 
 Calendar and Julian Dates
-bash
+   ```bash
 Copy code
 cal -j
 cal -s
@@ -83,7 +83,7 @@ cal -m — displayed a Monday–Sunday view
 I learned that Julian dates are used in some industries for continuous day tracking.
 
 User ID and Groups
-bash
+   ```bash
 Copy code
 id ec2-user
 Displayed my User ID (UID), Group ID (GID), and associated groups.
@@ -99,7 +99,7 @@ This helped me understand Linux’s user and group identification system.
 In this task, I explored how to reuse and search previously entered commands efficiently.
 
 View Command History
-bash
+   ```bash
 Copy code
 history
 Displayed all commands I had executed during the session.
@@ -112,7 +112,7 @@ I typed TZ to search for previously used date commands and edited them inline us
 Reverse history search saved time by allowing me to quickly recall and reuse old commands.
 
 Repeat the Last Command
-bash
+   ```bash
 Copy code
 date
 !!
@@ -132,3 +132,7 @@ Practiced efficient command recall with Bash history
 I then ended the lab session and confirmed that the environment was deleted automatically.
 
 🧠 Key Learnings
+SSH is essential for securely managing remote Linux systems.
+The Linux command line provides a powerful way to access system information.
+The history and reverse search features can dramatically improve efficiency.
+Commands like whoami, hostname, uptime, and id are foundational for system administration.
