@@ -44,18 +44,18 @@ sudo passwd arosalez
 ```
 I repeated these steps for all users:
 
-| **First Name** | **Last Name** | **User ID** | **Job Role**         | **Starting Password** |
-| -------------- | ------------- | ----------- | -------------------- | --------------------- |
-| Alejandro      | Rosalez       | arosalez    | Sales Manager        | P@ssword1234!         |
-| Efua           | Owusu         | eowusu      | Shipping             | P@ssword1234!         |
-| Jane           | Doe           | jdoe        | Shipping             | P@ssword1234!         |
-| Li             | Juan          | ljuan       | HR Manager           | P@ssword1234!         |
-| Mary           | Major         | mmajor      | Finance Manager      | P@ssword1234!         |
-| Mateo          | Jackson       | mjackson    | CEO                  | P@ssword1234!         |
-| Nikki          | Wolf          | nwolf       | Sales Representative | P@ssword1234!         |
-| Paulo          | Santos        | psantos     | Shipping             | P@ssword1234!         |
-| Sofia          | Martinez      | smartinez   | HR Specialist        | P@ssword1234!         |
-| Saanvi         | Sarkar        | ssarkar     | Finance Specialist   | P@ssword1234!         |
+| **First Name** | **Last Name** | **User ID** | **Job Role**         |
+| -------------- | ------------- | ----------- | -------------------- |
+| Alejandro      | Rosalez       | arosalez    | Sales Manager        |
+| Efua           | Owusu         | eowusu      | Shipping             |
+| Jane           | Doe           | jdoe        | Shipping             |
+| Li             | Juan          | ljuan       | HR Manager           |
+| Mary           | Major         | mmajor      | Finance Manager      |
+| Mateo          | Jackson       | mjackson    | CEO                  |
+| Nikki          | Wolf          | nwolf       | Sales Representative |
+| Paulo          | Santos        | psantos     | Shipping             |
+| Sofia          | Martinez      | smartinez   | HR Specialist        |
+| Saanvi         | Sarkar        | ssarkar     | Finance Specialist   |
 
 
 After creating all users, I verified them with:
