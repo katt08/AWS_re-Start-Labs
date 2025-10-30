@@ -44,17 +44,19 @@ sudo passwd arosalez
 ```
 I repeated these steps for all users:
 
-User ID	Full Name	Job Role
-arosalez	Alejandro Rosalez	Sales Manager
-eowusu	Efua Owusu	Shipping
-jdoe	Jane Doe	Shipping
-ljuan	Li Juan	HR Manager
-mmajor	Mary Major	Finance Manager
-mjackson	Mateo Jackson	CEO
-nwolf	Nikki Wolf	Sales Representative
-psantos	Paulo Santos	Shipping
-smartinez	Sofia Martinez	HR Specialist
-ssarkar	Saanvi Sarkar	Finance Specialist
+| **First Name** | **Last Name** | **User ID** | **Job Role** | **Starting Password** |
+|----------------|----------------|--------------|--------------------------|-----------------------|
+| Alejandro | Rosalez | arosalez | Sales Manager | P@ssword1234! |
+| Efua | Owusu | eowusu | Shipping | P@ssword1234! |
+| Jane | Doe | jdoe | Shipping | P@ssword1234! |
+| Li | Juan | ljuan | HR Manager | P@ssword1234! |
+| Mary | Major | mmajor | Finance Manager | P@ssword1234! |
+| Mateo | Jackson | mjackson | CEO | P@ssword1234! |
+| Nikki | Wolf | nwolf | Sales Representative | P@ssword1234! |
+| Paulo | Santos | psantos | Shipping | P@ssword1234! |
+| Sofia | Martinez | smartinez | HR Specialist | P@ssword1234! |
+| Saanvi | Sarkar | ssarkar | Finance Specialist | P@ssword1234! |
+
 
 After creating all users, I verified them with:
 ```bash
