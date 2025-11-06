@@ -16,34 +16,49 @@ In this task, I used **Fleet Manager** (a capability of AWS Systems Manager) to 
 
 ## Steps I Completed
 In the AWS Management Console, in the  search box, enter Systems Manager and press Enter. This option takes you to the Systems Manager console page.
+
 In the left navigation pane, for Node Management, choose Fleet Manager.
+
 Choose the Account management dropdown list, and choose Set up inventory.
+
 To create an association that collects information about software and settings for your managed instance, choose the following options:
+
 In the Provide inventory details section, for Name, enter Inventory-Association
+
 In the Targets section, choose the following options:
 
 For Specify targets by, choose Manually selecting instances.
 Select the row for Managed Instance.
+
 Leave the other options as the default settings.
 
+
 Choose Setup Inventory
+
 A banner with the message "Setup inventory request succeeded" appears on the Fleet Manager page. Inventory, a capability of Systems Manager, now regularly inventories the instance for the selected properties.
 Choose the Node ID link, which directs you to the Node overview.
+
 Choose the Inventory tab.
+
 This tab lists all of the applications in the instance. Take a moment to review the installed applications and other options in the Inventory type dropdown list.
+
 You have successfully created a Systems Manager inventory association for your instance. Using Inventory, you can review and validate software configurations on your instances without needing to connect to each instance by using SSH.
 
 ---
 
 ## **Task 2: Install a Custom Application using Run Command**
 In this task, you install a custom web application (Widget Manufacturing Dashboard) by using Run Command, a capability of Systems Manager.
+
 A virtual private cloud (VPC) with an EC2 instance inside. A user outside the AWS Cloud uses Run Command to install a widget manufacturing web application.
+
 In the preceding diagram, Systems Manager installs an application on an EC2 instance within a virtual private cloud (VPC). It is installed by using Run Command. Run Command will run the "install script" and install the following: Apache web server, PHP, AWS SDK, and the web application. Once everything is installed, it also starts the web server.
+
 In the upper-left corner, expand the menu icon. For Node Management, choose Run Command.
 
 Choose Run command
 
 A list appears of pre-configured documents for running common commands. 
+
 Choose the search icon  in the box, and a dropdown box appears. Choose the following options: 
 
 Owner
@@ -53,7 +68,9 @@ A document appears.
 Note: Do not enter Owner or Owned by me. Entering this text does not return results. 
 
 If the document is not already selected, select the button for the document.
+
 The following information appears for this document:
+
 Description Install Dashboard App
 Document version: 1 (Default) 
 Leave the Document version option set to this default. 
@@ -98,16 +115,17 @@ Choose Create parameter
 
 Choose the following options:
 
-For Name:, enter /dashboard/show-beta-features
-For Description: , enter Display beta features
-For Tier:, leave the default option. 
-For Type:, leave the default option. 
-For Value:, enter True
+ -For Name:, enter ```/dashboard/show-beta-features```
+ -For Description: , enter ```Display beta features```
+ -For Tier:, leave the default option. 
+ -For Type:, leave the default option. 
+ -For Value:, enter ```True```
+ 
 Choose Create parameter
 
 A banner with the message "Create parameter request succeeded" appears at the top of the page. 
 
-The parameter can be specified as a hierarchical path, such as /dashboard/<option>.
+The parameter can be specified as a hierarchical path, such as ```/dashboard/<option>```.
 
 The application that is running on Amazon EC2 automatically checks for this parameter. If it finds this existing parameter, then additional features are displayed.
 
@@ -133,7 +151,7 @@ In the left navigation pane, for Node Management, choose Session Manager.
 
 Choose Start session
 
-Select Managed Instance.
+Select ```Managed Instance```.
 
 Choose Start session
 
@@ -170,4 +188,5 @@ Verified configurations and permissions
 Run tasks on multiple servers
 Updated application settings or configurations
 Accessed the command line on an instance
-Lab complete
+
+**Lab completed!**
