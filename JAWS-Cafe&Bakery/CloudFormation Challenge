@@ -1,0 +1,73 @@
+AWS re/Start Challenge Lab - Using AWS CloudFormation to create an AWS VPC and Amazon EC2 instance
+ 
+
+Lab Overview
+This lab is an environment for creating an Amazon VPC and Amazon EC2 instance (and other supporting elements) using an AWS CloudFormation template.  The goal of this lab is to create a CloudFormation template with the following components
+    * An Amazon Virtual Private Cloud
+    * An internet gateway attached to the VPC
+    * Security groups for accessing the VPC configured to allow SSH from anywhere
+    * A private subnet within the VPC
+    * An Amazon EC2 instance (a T3.micro) within the private subnet (Note: It is not necessary to access the EC2 via SSH or Remote Desktop for a successful solution)
+
+Build and test the lab iterating the solution until all components build.  Let the instructor know when the template builds without error so they may review the completed solution.
+
+ 
+
+Lab Restrictions
+Access to services is limited to those necessary to successfully build the services listed above.
+
+ 
+
+Accessing the AWS Management Console
+At the top of these instructions, click Start Lab to launch your lab.
+
+A Start Lab panel opens displaying the lab status.
+
+Wait until you see the message "Lab status: in creation", then click the X to close the Start Lab panel.
+
+At the top of these instructions, click AWS
+
+This will open the AWS Management Console in a new browser tab. The system will automatically log you in.
+
+Tip: If a new browser tab does not open, there will typically be a banner or icon at the top of your browser indicating that your browser is preventing the site from opening pop-up windows. Click on the banner or icon and choose "Allow pop ups."
+
+Arrange the AWS Management Console tab so that it displays along side these instructions. Ideally, you will be able to see both browser tabs at the same time, to make it easier to follow the lab steps.
+
+ 
+
+Using the Terminal in the browser
+A terminal window displays to the right of these instructions.
+
+You can toggle the visibility of the terminal window by selecting or deselecting the checkbox in the Terminal box at the top of the screen.
+
+The terminal in the browser provides access to a Linux shell on a server that exists outside of the AWS account that you use when your lab is running.
+
+ 
+
+Running AWS CLI commands
+After you start the lab, the terminal will be pre-configured with the credentials necessary to using the AWS Command Line Interface (AWS CLI).
+
+For example, run the following command to see the account number and your user ID:
+
+aws sts get-caller-identity
+If you have any EC2 instances running in the sandbox, running this command would provide information about them:
+
+aws ec2 describe-instances
+See the AWS CLI Command Reference documentation for details on how to use the AWS CLI.
+
+ 
+
+Using the AWS SDK for Python
+The terminal also has Python 3 installed with the boto 3 library available. You can use it to run AWS Python SDK code. For example:
+
+$ python3
+>>> import boto3
+>>> ec2 = boto3.client('ec2', region_name='us-west-2')  
+>>> ec2.describe_regions()
+>>> exit()
+$
+See the documentation for details on how to use the AWS SDK for Python.
+
+Additional Resources
+For more information about AWS Training and Certification, see https://aws.amazon.com/training/.
+​
